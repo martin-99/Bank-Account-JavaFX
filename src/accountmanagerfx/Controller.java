@@ -25,7 +25,7 @@ public class Controller {
     @FXML private Label heading;
 
 
-    public void initialize (){
+    public void initilize (){
         createAccount();
 // set up data for data table in view
         ObservableList<Transaction> data = tableView.getItems();
@@ -58,7 +58,7 @@ public class Controller {
     }
 
     private String currentDateString(){
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yy" );
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-YY" );
         String dateString = formatter.format(new Date());
         return dateString;
     }
