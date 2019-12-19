@@ -58,7 +58,7 @@ public class Controller {
     }
 
     private String currentDateString(){
-        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-YY" );
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-YY HH:mm" );
         String dateString = formatter.format(new Date());
         return dateString;
     }
